@@ -91,13 +91,9 @@ app.post("/post", async (req, res) => {
 
 
 
-app.use((req, res, next) => {
-    if (req.method === "GET" && !req.path.startsWith("/api")) {
-    res.sendFile(path.join(process.cwd(), "dist", "index.html"));
-    } else {
-        next();
-    }
-    });
+app.get(/^(?!\/api).*/, (req, res) => {
+  res.sendFile(join(__dirname, "dist", "index.html"));
+});
 
 
 
