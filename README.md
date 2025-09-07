@@ -1,13 +1,61 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# ✨ Lizi’s Blog With React
 
-Currently, two official plugins are available:
+A full-stack **blogging platform** built with **Node.js, Express, EJS, and PostgreSQL**.  
+It lets you publish, read, and manage blog posts with a clean interface.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
+- 📝 Create, edit, and delete blog posts  
+- 🎨 Server-side rendering with **EJS templates**  
+- 🗄️ Persistent data storage with **PostgreSQL**  
+- 🔒 Environment variables handled via **dotenv**  
+- 📱 Responsive design with Bootstrap / CSS  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Lizis-blog-with-react
+---
+
+## 🛠️ Tech Stack
+- **Backend:** Node.js, Express  
+- **Frontend:** React + Vite
+- **Database:** PostgreSQL  
+- **Other:** npm, dotenv  
+
+---
+
+## 📂 Project Structure
+
+📂 Project Root
+├── public/                 # Static assets
+├── src/                    # React frontend
+│   ├── assets/             # Images, CSS
+│   │   ├── css/
+│   │   └── images/
+│   ├── components/         # Reusable components
+│   │   ├── ContactForm.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   ├── Navbar.jsx
+│   │   └── PostForm.jsx
+│   ├── pages/              # React pages (Blog, Home, etc.)
+│   ├── App.jsx             # Root React component
+│   ├── Layout.jsx          # Layout wrapper
+│   └── main.jsx            # Vite entry file
+├── views/ (optional)       # EJS templates (if server-side pages needed)
+│   ├── partials/           
+│   └── pages/
+├── .env                    # Environment variables
+├── .gitignore              
+├── eslint.config.js        
+├── index.html              # Vite entry point
+├── package.json            
+├── package-lock.json       
+├── README.md               
+├── server.js               # Express backend (API + serves dist/)
+├── vite.config.js          # Vite config
+└── dist/                   # Generated React build (created after `npm run build`)
+
+
+## 📄 License
+
+© 2025 Developer-107. All rights reserved.
