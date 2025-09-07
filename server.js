@@ -6,6 +6,13 @@ import bodyParser from "body-parser";
 
 import path from "path";
 import cors from "cors";
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
+
+
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 
 
@@ -18,7 +25,6 @@ app.use(bodyParser.json()); // <-- this is required for JSON POST
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 dotenv.config()
-app.use(express.static(path.join(process.cwd(), "dist"))); // Vite builds to 'dist'
 
 
 const PORT = process.env.PORT;
@@ -89,6 +95,7 @@ app.post("/post", async (req, res) => {
     }
 });
 
+app.use(express.static(path.join(process.cwd(), "dist"))); // Vite builds to 'dist'
 
 
 app.get(/^(?!\/api).*/, (req, res) => {
