@@ -28,7 +28,7 @@ const client = new Pool({
   host: process.env.HOST,
   port: process.env.POSTGRES_PORT,
   database: process.env.DATABASE,
-
+  ssl: { rejectUnauthorized: false }
 });
 
 app.get("/api/blogs", async (req, res) => {
