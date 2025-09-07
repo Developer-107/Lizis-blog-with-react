@@ -1,17 +1,17 @@
 
 # ✨ Lizi’s Blog With React
 
-A full-stack **blogging platform** built with **Node.js, Express, EJS, and PostgreSQL**.  
+A full-stack **blogging platform** built with **Node.js, Express, React, Vite and PostgreSQL**.  
 It lets you publish, read, and manage blog posts with a clean interface.  
 
 ---
 
 ## 🚀 Features
 - 📝 Create, edit, and delete blog posts  
-- 🎨 Server-side rendering with **EJS templates**  
+- 🎨 Server-side rendering with **React templates**  
 - 🗄️ Persistent data storage with **PostgreSQL**  
 - 🔒 Environment variables handled via **dotenv**  
-- 📱 Responsive design with Bootstrap / CSS  
+- 📱 Responsive design with Bootstrap / CSS / React
 
 ---
 
