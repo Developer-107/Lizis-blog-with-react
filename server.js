@@ -23,12 +23,8 @@ app.use(express.static(path.join(process.cwd(), "dist"))); // Vite builds to 'di
 
 const PORT = process.env.PORT;
 const client = new Pool({
-  user: process.env.USER,
-  password: process.env.PASSWORD,
-  host: process.env.HOST,
-  port: process.env.POSTGRES_PORT,
-  database: process.env.DATABASE,
-  ssl: { rejectUnauthorized: false }
+  connectionString: process.env.DATABASE_URL,
+  ssl: { rejectUnauthorized: false } // If not local
 });
 
 app.get("/api/blogs", async (req, res) => {
