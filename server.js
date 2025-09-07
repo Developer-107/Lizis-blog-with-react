@@ -33,6 +33,11 @@ const client = new Pool({
   ssl: { rejectUnauthorized: false } // If not local
 });
 
+
+client.connect()
+  .then(() => console.log("DB connected!"))
+  .catch(err => console.error("DB connection error:", err));
+
 app.get("/api/blogs", async (req, res) => {
     const page = parseInt(req.query.page) || 1; // current page, default 1
     const limit = 5; // blogs per page
