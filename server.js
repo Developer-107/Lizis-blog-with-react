@@ -15,9 +15,7 @@ app.use(bodyParser.json()); // <-- this is required for JSON POST
 
 
 
-app.use(cors({
-  origin: "http://localhost:5173"
-}));
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 dotenv.config()
 app.use(express.static(path.join(process.cwd(), "dist"))); // Vite builds to 'dist'
