@@ -86,7 +86,7 @@ app.post("/post", async (req, res) => {
         "INSERT INTO blogs (title, subtitle, post_content, cover_img, post_date) VALUES ($1, $2, $3, $4, NOW())",
         [title, subtitle, content, cover_img]
     );
-    res.json({ success: true, post: result.rows[0] }); // <-- send JSON back
+    res.json({ success: true, post: req.body.rows[0] }); // <-- send JSON back
     } catch (err) {
         console.log(err);
         res.status(500).json({ success: false, error: "Failed to save post" });

@@ -9,7 +9,7 @@ function Home (){
   const [totalPages, setTotalPages] = useState(1);
 
   useEffect(() => {
-  fetch(`http://localhost:5000/api/blogs?page=${currentPage}`)
+  fetch(`/api/blogs?page=${currentPage}`)
     .then((res) => res.json())
     .then((data) => {
       setBlogs(data.blogs);

@@ -20,7 +20,7 @@ function Layout(){
 
   useEffect(() => {
     if (id) {
-      fetch(`http://localhost:5000/api/blog/${id}`)
+      fetch(`/api/blog/${id}`)
         .then(res => res.json())
         .then(data => setSpecificBlog(data.specificBlog))
         .catch(err => console.error(err));

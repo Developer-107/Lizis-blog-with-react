@@ -40,7 +40,7 @@ function PostForm() {
 
 
     // Example: send to backend with fetch
-      fetch("http://localhost:5000/post", {
+      fetch("/post", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(postData),
