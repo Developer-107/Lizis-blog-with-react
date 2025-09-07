@@ -25,35 +25,35 @@ It lets you publish, read, and manage blog posts with a clean interface.
 
 ## 📂 Project Structure
 
-📂 Project Root
-├── public/                 # Static assets
-├── src/                    # React frontend
-│   ├── assets/             # Images, CSS
-│   │   ├── css/
-│   │   └── images/
-│   ├── components/         # Reusable components
-│   │   ├── ContactForm.jsx
-│   │   ├── Footer.jsx
-│   │   ├── Header.jsx
-│   │   ├── Navbar.jsx
-│   │   └── PostForm.jsx
-│   ├── pages/              # React pages (Blog, Home, etc.)
-│   ├── App.jsx             # Root React component
-│   ├── Layout.jsx          # Layout wrapper
-│   └── main.jsx            # Vite entry file
-├── views/ (optional)       # EJS templates (if server-side pages needed)
-│   ├── partials/           
-│   └── pages/
-├── .env                    # Environment variables
-├── .gitignore              
-├── eslint.config.js        
-├── index.html              # Vite entry point
-├── package.json            
-├── package-lock.json       
-├── README.md               
-├── server.js               # Express backend (API + serves dist/)
-├── vite.config.js          # Vite config
-└── dist/                   # Generated React build (created after `npm run build`)
+📂 Project Root <br/>
+├── public/                 # Static assets <br/>
+├── src/                    # React frontend <br/>
+│   ├── assets/             # Images, CSS <br/>
+│   │   ├── css/ <br/>
+│   │   └── images/ <br/>
+│   ├── components/         # Reusable components <br/>
+│   │   ├── ContactForm.jsx <br/>
+│   │   ├── Footer.jsx <br/>
+│   │   ├── Header.jsx <br/>
+│   │   ├── Navbar.jsx <br/>
+│   │   └── PostForm.jsx <br/>
+│   ├── pages/              # React pages (Blog, Home, etc.) <br/>
+│   ├── App.jsx             # Root React component <br/>
+│   ├── Layout.jsx          # Layout wrapper <br/>
+│   └── main.jsx            # Vite entry file <br/>
+├── views/ (optional)       # EJS templates (if server-side pages needed) <br/>
+│   ├── partials/           <br/>
+│   └── pages/              <br/>
+├── .env                    # Environment variables <br/>
+├── .gitignore              <br/>
+├── eslint.config.js        <br/>
+├── index.html              # Vite entry point <br/>
+├── package.json            <br/>
+├── package-lock.json       <br/>
+├── README.md               <br/>
+├── server.js               # Express backend (API + serves dist/) <br/>
+├── vite.config.js          # Vite config <br/>
+└── dist/                   # Generated React build (created after `npm run build`) <br/>
 
 
 ## 📄 License
